@@ -15,15 +15,22 @@ public class Q07_SquareArray {
 		System.out.println("Enter an integer");
 		int length = scan.nextInt();
 		int arr[][]=new int[length][length];
+		for(int[] w:arr) {
+			for(int r: w) {
+				r=length;
+				System.out.println(r);
+			}
+			//System.out.println(Arrays.deepToString(arr));
+		}
 		
-		for(int i=0; i<length; i++) {
-			
-			for(int j=0; j<length; j++) {
-				arr[i][j]=length;
-				
-			}
-			System.out.println(Arrays.toString(arr[i]));	
-			}
+//		for(int i=0; i<length; i++) {
+//			
+//			for(int j=0; j<length; j++) {
+//				arr[i][j]=length;
+//				
+//			}
+//			System.out.println(Arrays.toString(arr[i]));	
+//			}
 		System.out.println(Arrays.deepToString(arr));
 		scan.close();
 		}
