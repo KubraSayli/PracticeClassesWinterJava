@@ -23,6 +23,7 @@ public class Q9_Bonus {
 		System.out.println("How long have you been working?");
 		int year = scan.nextInt();
 		
+		//just added "=" to ensure 5 year to get bonus as well.
 		if(year>=5) {
 			System.out.println("Your bonus is : "+salary*5/100 + "$");
 		}else {
